@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/marimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/mardes"
+        app:layout_constraintTop_toBottomOf="@+id/mardes" />
+
+    <TextView
+        android:id="@+id/mar_title"
+        android:layout_width="249dp"
+        android:layout_height="89dp"
+        android:hint="Title"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        :layout_constraintEnd_toEndOf="@+id/apod_date"
+        app:layout_constraintStart_toEndOf="@+id/marimg"
+        app:layout_constraintTop_toBottomOf="@+id/mardes" />
+
+    <TextView
+        android:id="@+id/mardes"
+        android:layout_width="346dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:hint="Date"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
